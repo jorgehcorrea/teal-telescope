@@ -1,8 +1,8 @@
 ---
-title: 'Markdown Style Guide'
+title: 'Perfect Combinations for Every Palate'
 description: 'Here is a sample of some basic Markdown syntax that can be used when writing Markdown content in Astro.'
 pubDate: 'Jul 01 2022'
-heroImage: '/blog-placeholder-1.jpg'
+heroImage: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIqWiZvl1gCaY1rTpTy_58cwDrx7MUStA3zWmkb61pAi0mBwvHJM8Sr6JhZk53gpxYQ_w&usqp=CAU'
 ---
 
 Here is a sample of some basic Markdown syntax that can be used when writing Markdown content in Astro.

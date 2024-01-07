@@ -1,8 +1,8 @@
 ---
-title: 'Second post'
+title: 'The Different Types'
 description: 'Lorem ipsum dolor sit amet'
-pubDate: 'Jul 22 2022'
-heroImage: '/blog-placeholder-4.jpg'
+pubDate: 'Jul 08 2022'
+heroImage: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlZFjVmi0RRP2f3voG8dz0FfaJB6__vAEeS-SOisf1yJV4VC5aqBkbtke3PD_z9Ozc-8g&usqp=CAU'
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae ultricies leo integer malesuada nunc vel risus commodo viverra. Adipiscing enim eu turpis egestas pretium. Euismod elementum nisi quis eleifend quam adipiscing. In hac habitasse platea dictumst vestibulum. Sagittis purus sit amet volutpat. Netus et malesuada fames ac turpis egestas. Eget magna fermentum iaculis eu non diam phasellus vestibulum lorem. Varius sit amet mattis vulputate enim. Habitasse platea dictumst quisque sagittis. Integer quis auctor elit sed vulputate mi. Dictumst quisque sagittis purus sit amet.

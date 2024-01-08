@@ -1,13 +1,44 @@
 ---
 import Layout from '../layouts/BlogPost.astro';
----
+const pageTitle = "The fuck me, I'm so fucking hot page";
+const identity = {
+firstName: "Sarah",
+contry: "Canada",
+occupation: "Technical Writer",
+hobbies: ["photography", "birdwatching", "baseball"],
+};
+const skills = ["HTML", "CSS", "JavaScript", "React", "Astro", "Writing Docs"];
+const happy = true;
+const finished = false;
+const goal = 3;
 
+---
 <Layout
-	title="About Me"
+	title=""
 	description="gorgonzola the world"
 	pubDate={new Date('August 08 2021')}
 	heroImage="https://qph.cf2.quoracdn.net/main-qimg-3b4718b7c13b2c4517b52535bec03d83"
 >
+<h1>{pageTitle}</h1>
+<p>Here are a few facts about me:</p>
+<ul>
+  <li>My name is {identity.firstName}.</li>
+  <li>I live in {identity.country} and I work as a {identity.occupation}.</li>
+  {identity.hobbies.length >= 2 &&
+    <li>Two of my hobbies are: {identity.hobbies[0]} and {identity.hobbies[1]}</li>
+  }
+</ul>
+<p>My skills are:</p>
+<ul>
+  {skills.map((skill) => <li>{skill}</li>)}
+</ul>
+
+{happy && <p>I am happy to be learning Astro!</p>}
+
+{finished && <p>I finished this tutorial!</p>}
+
+{goal === 3 ? <p>My goal is to finish in 3 days.</p> : <p>My goal is not 3 days.</p>}
+
 	<p>
 Welcome to Gorgonzola Gazette, a small but heartfelt blog dedicated to the beloved Italian cheese, Gorgonzola. Dive into the world of this exquisite cheese as we explore its rich history, delectable variations, and mouthwatering recipes. Join me, John, the owner of Gorgonzola Gazette, as I share my personal journey and passion for this particular cheese.
 </p>

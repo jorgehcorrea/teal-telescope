@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/BlogPost.astro';
+import'../styles/global.css';
 const pageTitle = "The fuck me, I'm so fucking hot page";
 const identity = {
 firstName: "Sarah",
@@ -11,7 +12,7 @@ const skills = ["HTML", "CSS", "JavaScript", "React", "Astro", "Writing Docs"];
 const happy = true;
 const finished = false;
 const goal = 3;
-
+const skillColor = "Orange";
 ---
 <Layout
 	title=""
@@ -19,6 +20,8 @@ const goal = 3;
 	pubDate={new Date('August 08 2021')}
 	heroImage="https://qph.cf2.quoracdn.net/main-qimg-3b4718b7c13b2c4517b52535bec03d83"
 >
+
+<body>
 <h1>{pageTitle}</h1>
 <p>Here are a few facts about me:</p>
 <ul>
@@ -28,9 +31,10 @@ const goal = 3;
     <li>Two of my hobbies are: {identity.hobbies[0]} and {identity.hobbies[1]}</li>
   }
 </ul>
+
 <p>My skills are:</p>
 <ul>
-  {skills.map((skill) => <li>{skill}</li>)}
+  {skills.map((skill) => <li class="skill">{skill}</li>)}
 </ul>
 
 {happy && <p>I am happy to be learning Astro!</p>}
@@ -57,5 +61,18 @@ Join me in this delightful journey as we unravel the secrets, stories, and flavo
 
 Stay tuned for more articles, recipes, and captivating tales, as Gorgonzola Gazette invites you to embark on a journey through the captivating world of Gorgonzola cheese!
 	</p>
-
+</body>
 </Layout>
+
+<head>
+<style define:vars={{skillColor}}>
+h1{
+color: purple;
+font-size: 4rem;
+}
+.skill {
+color:var(--skillColor);
+font-weight: bold;
+}
+</style>
+</head>
